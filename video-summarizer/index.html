@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Summarizer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo" id="logo">
+    <nav>
+      <button id="login-btn">Login</button>
+      <button id="signup-btn">Sign Up</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <h2>Summarize Your Video</h2>
+      <label for="video-url">Enter YouTube URL:</label>
+      <input type="url" id="video-url" placeholder="https://youtube.com/...">
+      
+      <p>OR</p>
+
+      <label for="file-upload">Upload Video/Audio File:</label>
+      <input type="file" id="file-upload" accept="video/*,audio/*">
+      
+      <button id="process-btn">Summarize</button>
+    </section>
+
+    <section id="output-section" style="display: none;">
+      <h2>Summary</h2>
+      <div id="summary"></div>
+      <button id="download-btn">Download Summary</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Video Summarizer</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
